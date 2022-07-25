@@ -1,5 +1,5 @@
 """
-
+Instância de um objeto/classe - Criação de um objeto a partir de uma classe
 """
 
 from pessoa import Pessoa
