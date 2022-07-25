@@ -10,7 +10,7 @@ p2 = Pessoa()
 # p1 != p2
 # Quando se instancia (copia) uma classe para um objeto (p1, p2), sempre serão atribuídos valores diferentes ao chamar,
 # pois apontarão para diferentes lugares da memória.
-print(p1) # Prova disso.
+print(p1) # Prova disso..
 print(p2)
 # Ou seja, estamos utilizando um molde para criar uma pessoa p1, e outro molde para criar uma pessoa p2 completamente
 # diferente. Sempre que chama essas clases, será automaticamente setado como se fossem pessoas diferentes.
