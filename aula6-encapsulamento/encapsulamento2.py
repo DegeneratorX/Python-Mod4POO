@@ -39,7 +39,6 @@ print()
 bd.inserir_cliente(1, 'Victor')  # Insiro 3 clientes
 bd.inserir_cliente(2, 'Fernando')
 bd.inserir_cliente(3, 'Maria')
-
 print()
 
 bd.apaga_cliente(2)  # Apago 'Fernando'
