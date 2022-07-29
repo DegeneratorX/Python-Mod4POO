@@ -34,5 +34,5 @@ print()
 p1 = Pessoa.por_ano_nascimento('Luiz', 1987)
 p1.get_ano_nascimento()
 
-print(Pessoa.gera_id())  # Pode-se chamar tanto pela instância quanto pela classe
+print(Pessoa.gera_id())  # Pode-se chamar tanto pela instância quanto pela classe. Métodos estáticos você não é obrigado a instanciar um objeto para chamar o método.
 print(p1.gera_id())  
