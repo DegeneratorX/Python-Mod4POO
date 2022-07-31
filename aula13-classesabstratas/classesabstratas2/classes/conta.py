@@ -9,7 +9,7 @@ class Conta(ABC):
 
 
     @property
-    def agencia(self):  # Consulta da agência
+    def agencia(self):  # Consulta da agência. Posso consultar fora da classe mesmo com valores protected chamando essa função a partir da instância, mas sem parênteses. Ex: print(cp.agencia)
         return self._agencia
 
 
