@@ -58,9 +58,9 @@ Resumo do módulo.
     - Exemplo: Classe Conta, Classe Conta Corrente e Classe Conta Poupança. Não há necessidade de instanciar 'Conta', pois só existe dois tipos de conta: Corrente e Poupança.
 
     - Métodos Abstratos:
-        • Métodos que não tem corpo, não escreve código nele, para que as outras classes filhas herdem este método e sejam OBRIGADAS a criar esse métodos nessas classes filhas. Geralmente métodos que devem ser e serão usados por todas as classes filhas, mas que vão agir de forma diferente pra cada classe. @abstractmethod é usado pra diferenciar.
-        • Exemplo: Toda conta deposita e faz saque de forma igual, mas conta corrente e poupança possuem regras diferentes para saque, e precisam ser mudadas dentro dessas subclasses.
+        - Métodos que não tem corpo, não escreve código nele, para que as outras classes filhas herdem este método e sejam OBRIGADAS a criar esse métodos nessas classes filhas. Geralmente métodos que devem ser e serão usados por todas as classes filhas, mas que vão agir de forma diferente pra cada classe. @abstractmethod é usado pra diferenciar.
+        - Exemplo: Toda conta deposita e faz saque de forma igual, mas conta corrente e poupança possuem regras diferentes para saque, e precisam ser mudadas dentro dessas subclasses.
 
     - Métodos Concretos:
-        • Métodos tradicionais que se usa normalmente, é herdado pela hierarquia e não são obrigatórios definir em cada subclasse, pois agem de forma igual para todas elas.
-        • Exemplo: depósito de uma conta. Tanto Conta Corrente quanto Poupança funcionam de forma igual. Não há necessidade de definir métodos 'depósitos' nessas subclasses. Do jeito que elas irão herdar, vão funcionar perfeitamente.
+        - Métodos tradicionais que se usa normalmente, é herdado pela hierarquia e não são obrigatórios definir em cada subclasse, pois agem de forma igual para todas elas.
+        - Exemplo: depósito de uma conta. Tanto Conta Corrente quanto Poupança funcionam de forma igual. Não há necessidade de definir métodos 'depósitos' nessas subclasses. Do jeito que elas irão herdar, vão funcionar perfeitamente.
