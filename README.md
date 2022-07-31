@@ -12,7 +12,7 @@ Resumo do módulo.
 - Atributos de Classe:
     - São atributos criados dentro da classe, mas fora de qualquer método. Podem ser usados globalmente dentro da classe, mas podem ser sobrepostos por métodos ou pela instânciação.
 
-#####################################################################################################################################
+#######################################################################################
 
 - Métodos de Instância:
     - Trabalha apenas com instância. São os métodos tradicionais no geral. No geral recebe 'self' como parâmetro.
@@ -21,14 +21,14 @@ Resumo do módulo.
 - Métodos Estáticos:
     - Não recebem parâmetros 'cls' nem 'self'. Funcionam como métodos pois a característica é atribuida à classe.
 
-#####################################################################################################################################
+#######################################################################################
 
 - Método Get:
     - Usa-se normalmente o decorador @property pra diferenciar um método get. Lê atributos de um objeto, normalmente privado. O nome do método precisa ser o mesmo nome do atributo que se deseja ler.
 - Método Set:
     - Usa-se normalmente o decorador @atributo.setter para diferenciar um método set. Configura atributos de um objeto, normalmente privado, e sem precisar alterar o código original das classes. O nome do decorador 'atributo' e do método precisa ser o mesmo nome do atributo que se deseja configurar.
 
-#####################################################################################################################################
+#######################################################################################
 
 - Encapsulamento Public:
     - Por padrão, todos os atributos criados são publicos e podem ser acessados pelo editor de texto ou IDE.
@@ -37,7 +37,7 @@ Resumo do módulo.
 - Encapsulamento Private:
     - O menos utilizado. Se utiliza __ antes de qualquer atributo criado. As IDES e editores proibem o acesso normal desse atributo, e pra acessar é preciso fazer gambiarra. Não se recomenda de forma alguma o acesso e configuração desses valores.
 
-#####################################################################################################################################
+#######################################################################################
 
 - Associação (de classes):
     - Uma classe utiliza outra classe, e uma pode viver/funcionar sem a outra. Exemplo: Classe Escritor pode usar uma Classe Caneta, Lápis ou Keyboard, mas ele pode não usar nenhuma das 3. Continuará sendo um escritor.
@@ -46,7 +46,7 @@ Resumo do módulo.
 - Composição (de classes):
     - Uma classe utiliza outra classe, e uma depende da outra de forma forte. Se uma instância for deletada, todos os atributos da classe associada à classe instanciada serão deletados juntos. Exemplo: Cliente preicsa de Endereço, e vice-versa. Corpo Humano precisa do Cérebro, e vice-versa.
 
-#####################################################################################################################################
+#######################################################################################
 
 - Herança Simples:
     - Uma classe herda todos os atributos e métodos de outra classe, mas não ocorre o contrário.
@@ -57,7 +57,7 @@ Resumo do módulo.
 - Problema do Diamante:
     - Quando uma classe D herda multiplamente de C e B, e C e B herdam de A. O interpretador do python não sabe como escolher as heranças.
 
-#####################################################################################################################################
+#######################################################################################
 
 - Classes Abstratas:
     - Classes que não tem necessidade de serem instanciadas, pois as subclasses já fazem o trabalho de categorizar.
