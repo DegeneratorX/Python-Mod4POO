@@ -2,7 +2,7 @@
 Módulo 4 Python - Programação Orientada a Objetos do curso de python do Luiz Otávio Miranda (udemy).
 
 Resumo do módulo.
-
+<br>
 - Classes:
     - Tipo structures do C. São basicamente moldes de um objeto. Espécies. Tipos. Família. Categorias.
 - Instância:
