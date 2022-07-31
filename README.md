@@ -3,57 +3,57 @@ Módulo 4 Python - Programação Orientada a Objetos do curso de python do Luiz 
 
 Resumo do módulo.
 
-Classes:
+- Classes:
     - Tipo structures do C. São basicamente moldes de um objeto. Espécies. Tipos. Família. Categorias.
-Instância:
+- Instância:
     - Criação de um objeto usando uma classe.
-Construtores de Classe:
+- Construtores de Classe:
     - __init__(self, ...) é o método inicial de uma classe padrão. Onde são criados atributos de um objeto.
-Atributos de Classe:
+- Atributos de Classe:
     - São atributos criados dentro da classe, mas fora de qualquer método. Podem ser usados globalmente dentro da classe, mas podem ser sobrepostos por métodos ou pela instânciação.
 
 
-Métodos de Instância:
+- Métodos de Instância:
     - Trabalha apenas com instância. São os métodos tradicionais no geral. No geral recebe 'self' como parâmetro.
-Métodos de Classe:
+- Métodos de Classe:
     - Trabalha com classes. Recebe como parâmetro 'cls' ao invés de 'self', e usa o decorador @classmethod para diferenciar.
-Métodos Estáticos:
+- Métodos Estáticos:
     - Não recebem parâmetros 'cls' nem 'self'. Funcionam como métodos pois a característica é atribuida à classe.
 
 
-Método Get:
+- Método Get:
     - Usa-se normalmente o decorador @property pra diferenciar um método get. Lê atributos de um objeto, normalmente privado. O nome do método precisa ser o mesmo nome do atributo que se deseja ler.
-Método Set:
+- Método Set:
     - Usa-se normalmente o decorador @atributo.setter para diferenciar um método set. Configura atributos de um objeto, normalmente privado, e sem precisar alterar o código original das classes. O nome do decorador 'atributo' e do método precisa ser o mesmo nome do atributo que se deseja configurar.
 
 
-Encapsulamento Public:
+- Encapsulamento Public:
     - Por padrão, todos os atributos criados são publicos e podem ser acessados pelo editor de texto ou IDE.
-Encapsulamento Protected:
+- Encapsulamento Protected:
     - O mais utilizado pela comunidade python. Por convenção, se utiliza _ antes de qualquer atributo criado. As IDEs e editores já entnedem que não é um valor que deve ser acessado ou configurado diretamente, e por isso lista por último ao tentar acessar.
-Encapsulamento Private:
+- Encapsulamento Private:
     - O menos utilizado. Se utiliza __ antes de qualquer atributo criado. As IDES e editores proibem o acesso normal desse atributo, e pra acessar é preciso fazer gambiarra. Não se recomenda de forma alguma o acesso e configuração desses valores.
 
 
-Associação (de classes):
+- Associação (de classes):
     - Uma classe utiliza outra classe, e uma pode viver/funcionar sem a outra. Exemplo: Classe Escritor pode usar uma Classe Caneta, Lápis ou Keyboard, mas ele pode não usar nenhuma das 3. Continuará sendo um escritor.
-Agregação (de classes):
+- Agregação (de classes):
     - Uma classe utiliza outra classe, e uma depende da outra de forma fraca. Exemplo: Carrinho de Compras precisa de Produtos, mas não o inverso. Ou um Carro precisa de Rodas pra andar, mas não o contrário. Eles isolados funcionam, mas serão inúteis.
-Composição (de classes):
+- Composição (de classes):
     - Uma classe utiliza outra classe, e uma depende da outra de forma forte. Se uma instância for deletada, todos os atributos da classe associada à classe instanciada serão deletados juntos. Exemplo: Cliente preicsa de Endereço, e vice-versa. Corpo Humano precisa do Cérebro, e vice-versa.
 
 
-Herança Simples:
+- Herança Simples:
     - Uma classe herda todos os atributos e métodos de outra classe, mas não ocorre o contrário.
-Herança Múltipla:
+- Herança Múltipla:
     - Uma classe herda todos os atributos e métodos de duas ou mais classes, mas não ocorre o contrário.
-Sobreposição (de métodos):
+- Sobreposição (de métodos):
     - Quando se cria um método dentro de uma classe filha herdada que sobrepõe o método da classe mãe com o mesmo nome. Pra resolver possíveis incompatibilidades, usa-se 'super().métodosobreposto' dentro do método conflituoso criado, e assim recebe todos os atributos da classe mãe e ainda acrescenta mais atributos exclusivos à classe filha.
-Problema do Diamante:
+- Problema do Diamante:
     - Quando uma classe D herda multiplamente de C e B, e C e B herdam de A. O interpretador do python não sabe como escolher as heranças.
 
 
-Classes Abstratas:
+- Classes Abstratas:
     - Classes que não tem necessidade de serem instanciadas, pois as subclasses já fazem o trabalho de categorizar.
     - Exemplo: Classe Conta, Classe Conta Corrente e Classe Conta Poupança. Não há necessidade de instanciar 'Conta', pois só existe dois tipos de conta: Corrente e Poupança.
 
