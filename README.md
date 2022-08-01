@@ -70,3 +70,11 @@ Resumo do módulo.
     - Métodos Concretos:
         - Métodos tradicionais que se usa normalmente, é herdado pela hierarquia e não são obrigatórios definir em cada subclasse, pois agem de forma igual para todas elas.
         - Exemplo: depósito de uma conta. Tanto Conta Corrente quanto Poupança funcionam de forma igual. Não há necessidade de definir métodos 'depósitos' nessas subclasses. Do jeito que elas irão herdar, vão funcionar perfeitamente.
+
+- Polimorfismo:
+    - É o princípio que permite que classes derivadas de uma mesma superclasse tenham métodos iguais (de mesma assinatura), mas comportamentos diferentes. Basicamente tudo que for implementado com métodos abstratos, gera polimorfismo.
+
+#######################################################################################
+
+- Métodos Mágicos (especiais):
+    - Métodos que literalmente transformam o comportamento de uma classe. Usa-se 'def __método__()', sempre dois underscore antes e depois do nome principal. São built-in, e fazem todo o trabalho por nós por trás dos panos.
